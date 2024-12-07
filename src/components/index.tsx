@@ -1,3 +1,3 @@
-import Cards from './Cards'
+import Cards from './Cards';
 
-export {Cards};
+export { Cards };

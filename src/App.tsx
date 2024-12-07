@@ -1,10 +1,10 @@
-import { Cards } from './components/index.tsx'
+import { Cards } from './components/index.tsx';
 const App = () => {
-  return (
-    <>
-       <Cards />
-    </>
-  )
-}
+    return (
+        <>
+            <Cards />
+        </>
+    );
+};
 
-export default App
+export default App;
