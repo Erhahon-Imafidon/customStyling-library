@@ -1,8 +1,9 @@
-import { Cards } from './components/index.tsx';
+import { Cards, Colors } from './components/index.tsx';
 const App = () => {
     return (
         <>
             <Cards />
+            <Colors />
         </>
     );
 };
