@@ -1,13 +1,15 @@
 @use "../variables" as *;
+@use "sass:math";
 
 .cards {
   display: block;
   padding: $base-padding;
   border: $base-border-thickness solid #ddd;
   box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius, 4);
 
   .card-title {
-    font-size: $base-font-size;
+    font-size: px-to-rem(24);
     padding-top: $base-padding;
     font-weight: bold;
   }
@@ -20,3 +22,6 @@
     }
   }
 }
+
+//@debug 'hello leaders';
+//@debug math.div(24, 15);
