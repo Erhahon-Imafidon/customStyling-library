@@ -27,3 +27,46 @@ export const colorsBgData = [
     { textColor: 'text-white', text: 'orange text', bgColor: 'bg-orange' },
     { textColor: 'text-white', text: 'gray text', bgColor: 'bg-gray' },
 ];
+
+export const colorsVarData = [
+    {
+        textColor: 'text-white',
+        text: 'primary dark 8',
+        variations: 'bg-primary-dark-8',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary dark 6',
+        variations: 'bg-primary-dark-6',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary dark 5',
+        variations: 'bg-primary-dark-4',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary dark 2',
+        variations: 'bg-primary-dark-2',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary light 2',
+        variations: 'bg-primary-light-2',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary light 4',
+        variations: 'bg-primary-light-4 text-white',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary light 6',
+        variations: 'bg-primary-light-6',
+    },
+    {
+        textColor: 'text-white',
+        text: 'primary light 8',
+        variations: 'bg-primary-light-8',
+    },
+];

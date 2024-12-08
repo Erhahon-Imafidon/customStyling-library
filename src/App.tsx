@@ -1,5 +1,5 @@
 import { Cards, Colors } from './components/index.tsx';
-import { colorsData, colorsBgData } from './data.ts';
+import { colorsData, colorsBgData, colorsVarData } from './data.ts';
 
 const App = () => {
     return (
@@ -9,10 +9,8 @@ const App = () => {
                 <h2>Colors</h2>
                 <Colors data={colorsData} />
                 <Colors data={colorsBgData} />
+                <Colors data={colorsVarData} />
             </div>
-            <p className="text-primary-light-4 bg-yellow-dark-5">
-                Primary light with variation of 40%
-            </p>
         </>
     );
 };
