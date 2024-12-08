@@ -13,6 +13,7 @@ const Colors = () => {
           <span className="text-purple">purple text</span> |
           <span className="text-orange">orange text</span> |
           <span className="text-gray">gray text</span>
+          <span className="bg-purple text-error">gray text</span>
       </div>
   )
 }
