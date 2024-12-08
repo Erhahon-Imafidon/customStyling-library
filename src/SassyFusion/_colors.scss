@@ -1,13 +1,28 @@
 @use './variables' as *;
 
 @each $key, $val in $colors {
+    //for text color
     .text-#{$key} {
         color: $val;
     }
 
+  .text-hover-#{$key} {
+      &:hover {
+          color: $val;
+      }
+  }
+
+
+// for background color
     .bg-#{$key} {
         background-color: $val;
     }
+
+  .bg-hover-#{$key} {
+    &:hover {
+      color: $val;
+    }
+  }
 
     @if ($val != black and $val != white) {
     // light variations
@@ -16,9 +31,21 @@
             color: mix(white, $val, $i * 10)
         }
 
+        .text-hover-#{$key}-light-#{$i} {
+            &:hover {
+                color: mix(white, $val, $i * 10)
+            }
+        }
+
         .bg-#{$key}-light-#{$i} {
             background-color: mix(white, $val, $i * 10)
         }
+
+      .bg-hover-#{$key}-light-#{$i} {
+        &:hover {
+          color: mix(white, $val, $i * 10)
+        }
+      }
     }
 
     // dark variations
@@ -27,9 +54,21 @@
             color: mix(black, $val, $i * 10)
         }
 
+        .text-hover-#{$key}-dark-#{$i} {
+            &:hover {
+                color: mix(black, $val, $i * 10)
+            }
+        }
+
         .bg-#{$key}-dark-#{$i} {
             background-color: mix(black, $val, $i * 10)
         }
+
+      .bg-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          color: mix(black, $val, $i * 10)
+        }
+      }
     }
     }
 }
