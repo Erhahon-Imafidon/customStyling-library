@@ -10,6 +10,9 @@ const App = () => {
                 <Colors data={colorsData} />
                 <Colors data={colorsBgData} />
             </div>
+            <p className="text-primary-light-4 bg-yellow-dark-5">
+                Primary light with variation of 40%
+            </p>
         </>
     );
 };
