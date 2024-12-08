@@ -1,18 +1,33 @@
 interface ColorsProp {
-    textColor?: string;
-    text: string;
-    bgColor?: string;
+    data: { textColor?: string; text: string; bgColor?: string }[];
 }
 
-const Colors = ({ text, textColor, bgColor }: ColorsProp) => {
+const Colors = ({ data }: ColorsProp) => {
     return (
-        <>
-            {textColor && <span className={`${textColor}`}>{text} | </span>}
-            {textColor && bgColor && (
-                <span className={`${textColor} ${bgColor}`}>{text}</span>
-            )}
-        </>
+        <ul style={styles}>
+            {data.map((item, index) => {
+                const { textColor, bgColor, text } = item;
+                return (
+                    <li key={index}>
+                        {textColor && !bgColor && (
+                            <span className={`${textColor}`}>{text} | </span>
+                        )}
+                        {textColor && bgColor && (
+                            <span className={`${textColor} ${bgColor}`}>
+                                {text}
+                            </span>
+                        )}
+                    </li>
+                );
+            })}
+        </ul>
     );
+};
+
+const styles = {
+    display: 'flex',
+    gap: '10px',
+    padding: '10px',
 };
 
 export default Colors;

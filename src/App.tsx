@@ -7,24 +7,8 @@ const App = () => {
             <Cards />
             <div style={{ marginTop: '10px' }}>
                 <h2>Colors</h2>
-                {colorsData.map((color, index) => (
-                    <Colors
-                        textColor={color.textColor}
-                        text={color.text}
-                        key={index}
-                    />
-                ))}
-                <br /> <br />
-                <div>
-                    {colorsBgData.map((color, index) => (
-                        <Colors
-                            textColor={color.textColor}
-                            text={color.text}
-                            bgColor={color.bgColor}
-                            key={index}
-                        />
-                    ))}
-                </div>
+                <Colors data={colorsData} />
+                <Colors data={colorsBgData} />
             </div>
         </>
     );
