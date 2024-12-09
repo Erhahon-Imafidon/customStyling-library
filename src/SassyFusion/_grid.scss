@@ -3,6 +3,14 @@
 
 $grid-columns: 12;
 
+$grid-gaps: (
+  '0': 0,
+  '1': 10px,
+  '2': 20px,
+  '3': 30px,
+  '4': 40px,
+);
+
 // base layout classes
 .container {
   width: 100%;
@@ -10,12 +18,25 @@ $grid-columns: 12;
   margin: 0 auto;
   padding: 20px 20px;
   box-sizing: border-box;
-}
+};
 
 .row {
   display: flex;
   flex-flow: row wrap;
+};
+
+ //grid-gaps
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
 }
+
 
 // col classes
 @include xs {
