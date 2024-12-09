@@ -1,4 +1,4 @@
-import { Cards, Colors } from './components/index.tsx';
+import { Cards, Colors, FontSize, Separator } from './components/index.tsx';
 import {
     colorsData,
     colorsBgData,
@@ -8,8 +8,10 @@ import {
 
 const App = () => {
     return (
-        <div style={styles}>
+        <main style={styles}>
             <Cards />
+            <Separator />
+
             <div style={{ marginTop: '10px' }}>
                 <h2>Colors</h2>
                 <Colors data={colorsData} />
@@ -17,7 +19,7 @@ const App = () => {
                 <Colors data={colorsVarData} />
             </div>
 
-            <br />
+            <Separator />
             <div>
                 <h2>Buttons</h2>
                 <Colors data={buttonsData} />
@@ -28,7 +30,16 @@ const App = () => {
                     Complement
                 </a>
             </div>
-        </div>
+
+            <Separator />
+
+            <div>
+                <h2 className="mt-2">Font Size</h2>
+                <FontSize />
+            </div>
+
+            <Separator />
+        </main>
     );
 };
 
