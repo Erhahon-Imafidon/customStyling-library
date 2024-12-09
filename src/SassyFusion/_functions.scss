@@ -1,14 +1,15 @@
 @use 'sass:math';
+@use 'sass:color';
 
 // function that takes in and returns a light complement color
 @function light-comp($color) {
-  $complement: complement($color);
-  $light-complement: lighten($complement, 30%);
-  @return $light-complement;
+    $complement: color.complement($color);
+    $light-complement: color.adjust($complement, $lightness:30%);
+    @return $light-complement;
 }
 
-// function that converts px to rem
+// function that converts px to rem by taking a number and the unit in px
 @function px-to-rem($px) {
-  @return math.div($px, 16) * 1rem;
+    @return math.div($px, 16px) * 1rem;
 }
 

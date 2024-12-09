@@ -10,7 +10,7 @@
     border-radius: math.div($base-border-radius, 4);
 
     .card-title {
-        font-size: px-to-rem(24);
+        font-size: px-to-rem(24px);
         padding-top: $base-padding;
         font-weight: bold;
     }

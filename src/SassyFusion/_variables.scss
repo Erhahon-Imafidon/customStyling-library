@@ -46,7 +46,7 @@ $font-size-xxl: $base-font-size * 3;
 //    background-color: map.get($colors, 'purple');
 //}
 
-//@debug map-get($colors, 'purple');
+//@debug map.get($colors, 'purple');
 //@debug map-has-key($colors, 'secondary');
 //@debug map-remove($colors, 'primary');
 //@debug map-merge($colors, ("pink": #ffc0cb));

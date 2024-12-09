@@ -1,0 +1,34 @@
+@use 'sass:math';
+@use 'sass:map';
+@use 'variables' as *;
+
+$utilities: (
+    'padding': (
+        'prefix': 'p',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 3,
+            '4': $base-padding * 4,
+            '5': $base-padding * 5,
+        ),
+    ),
+
+    'padding-left': (
+        'prefix': 'pl',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
+    ),
+);
+
+// generate utility class using the each loop
+@each $property, $map in $utilities {
+  $prefix: map.get($map, 'prefix')
+}
