@@ -1,4 +1,10 @@
-import { Cards, Colors, FontSize, Separator } from './components/index.tsx';
+import {
+    Cards,
+    Colors,
+    FontSize,
+    Separator,
+    GridLayout,
+} from './components/index.tsx';
 import {
     colorsData,
     colorsBgData,
@@ -8,7 +14,7 @@ import {
 
 const App = () => {
     return (
-        <main style={styles}>
+        <main className="container">
             <Cards />
             <Separator />
 
@@ -34,23 +40,29 @@ const App = () => {
             <Separator />
 
             <div>
-                <h2 className="mt-2">Font Size</h2>
+                <h2 className="mt-2 mb-1">Font Size</h2>
                 <FontSize />
             </div>
 
             <Separator />
 
             <p className="responsive-test font-lg">
-                Checking Responsive Breakpoint
+                Testing Responsive Breakpoint
             </p>
 
             <Separator />
+
+            <div>
+                <h2 className="mt-2 mb-1">Responsive Grid System</h2>
+                <div className="row">
+                    <GridLayout />
+                    <GridLayout />
+                    <GridLayout />
+                    <GridLayout />
+                </div>
+            </div>
         </main>
     );
-};
-
-const styles = {
-    padding: '10px',
 };
 
 export default App;
