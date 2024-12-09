@@ -51,3 +51,28 @@ $breakpoints: (
     @content;
   }
 }
+
+.responsive-test {
+  @include xs {
+    color: red;
+  }
+  @include sm {
+    color: blue;
+  }
+  @include md {
+    color: green;
+  }
+  @include lg {
+    color: purple;
+  }
+  @include xl {
+    color: orange;
+  }
+  @include breakpoint(1400px) {
+    color: pink;
+  }
+
+  @include min_max(500px, 650px) {
+    color: aquamarine;
+  }
+}

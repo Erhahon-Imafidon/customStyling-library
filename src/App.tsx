@@ -39,6 +39,12 @@ const App = () => {
             </div>
 
             <Separator />
+
+            <p className="responsive-test font-lg">
+                Checking Responsive Breakpoint
+            </p>
+
+            <Separator />
         </main>
     );
 };
