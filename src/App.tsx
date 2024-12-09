@@ -21,6 +21,12 @@ const App = () => {
             <div>
                 <h2>Buttons</h2>
                 <Colors data={buttonsData} />
+                <a href="#" className="btn-complement-purple">
+                    Complement btn
+                </a>{' '}
+                <a href="#" className="btn-complement-primary">
+                    Complement
+                </a>
             </div>
         </div>
     );
