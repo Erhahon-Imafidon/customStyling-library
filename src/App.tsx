@@ -54,7 +54,7 @@ const App = () => {
 
             <div>
                 <h2 className="mt-2 mb-1">Responsive Grid System</h2>
-                <div className="row gap-2">
+                <div className="row gap-2 justify-center">
                     <GridLayout />
                     <GridLayout />
                     <GridLayout />

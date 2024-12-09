@@ -1,6 +1,7 @@
 @use 'sass:math';
 @use 'breakpoints' as *;
 
+ //grid variables
 $grid-columns: 12;
 
 $grid-gaps: (
@@ -10,6 +11,8 @@ $grid-gaps: (
   '3': 30px,
   '4': 40px,
 );
+
+$layout-values: flex-end, flex-start, center, space-between, space-around;
 
 // base layout classes
 .container {
@@ -37,6 +40,12 @@ $grid-gaps: (
   }
 }
 
+// justify content classes
+@each $val in $layout-values {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
 
 // col classes
 @include xs {
