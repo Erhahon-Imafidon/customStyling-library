@@ -15,7 +15,7 @@ const Colors = ({ data }: ColorsProp) => {
                 return (
                     <li key={index}>
                         {textColor && !bgColor && !variations && (
-                            <span className={`${textColor}`}>{text} | </span>
+                            <span className={`${textColor}`}>{text} </span>
                         )}
                         {textColor && bgColor && !variations && (
                             <span className={`${textColor} ${bgColor}`}>

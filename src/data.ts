@@ -70,3 +70,19 @@ export const colorsVarData = [
         variations: 'bg-primary-light-8',
     },
 ];
+
+export const buttonsData = [
+    { textColor: 'btn', text: 'Default btn' },
+    { textColor: 'btn-primary text-white', text: 'click me' },
+    { textColor: 'btn-secondary text-white', text: 'click me' },
+    { textColor: 'btn-error text-white', text: 'click me' },
+    { textColor: 'btn-info', text: 'click me' },
+    {
+        textColor: 'btn-outlined-purple text-purple text-hover-white',
+        text: 'click me',
+    },
+    {
+        textColor: 'btn-outlined-orange text-orange text-hover-white',
+        text: 'click me',
+    },
+];
