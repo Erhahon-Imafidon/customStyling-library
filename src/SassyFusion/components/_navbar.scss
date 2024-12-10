@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -24,6 +25,7 @@
 // background color for the navbar
 @each $key, $val in $colors {
   .navbar-#{$key} {
+    @extend .navbar;
     background-color: $val;
   }
 }

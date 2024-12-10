@@ -1,70 +1,11 @@
-import {
-    Cards,
-    Colors,
-    FontSize,
-    Separator,
-    GridLayout,
-    Navbar,
-} from './components/index.tsx';
-import {
-    colorsData,
-    colorsBgData,
-    colorsVarData,
-    buttonsData,
-} from './data.ts';
+import { Home } from './pages/index.tsx';
+// import SassyPlayground from './pages/SassyPlayground.tsx'; // Uncomment this line to see the SassyPlayground in action
+// Then comment out the Home import above
 
 const App = () => {
     return (
         <>
-            <Navbar />
-            <main className="container">
-                <Cards />
-                <Separator />
-
-                <div style={{ marginTop: '10px' }}>
-                    <h2>Colors</h2>
-                    <Colors data={colorsData} />
-                    <Colors data={colorsBgData} />
-                    <Colors data={colorsVarData} />
-                </div>
-
-                <Separator />
-                <div>
-                    <h2>Buttons</h2>
-                    <Colors data={buttonsData} />
-                    <a href="#" className="btn-complement-purple">
-                        Complement btn
-                    </a>{' '}
-                    <a href="#" className="btn-complement-primary">
-                        Complement
-                    </a>
-                </div>
-
-                <Separator />
-
-                <div>
-                    <h2 className="mt-2 mb-1">Font Size</h2>
-                    <FontSize />
-                </div>
-
-                <Separator />
-
-                <p className="responsive-test font-lg">
-                    Testing Responsive Breakpoint
-                </p>
-
-                <Separator />
-
-                <div>
-                    <h2 className="mt-2 mb-1">Responsive Grid System</h2>
-                    <div className="row gap-2 justify-center">
-                        <GridLayout />
-                        <GridLayout />
-                        <GridLayout />
-                        <GridLayout />
-                    </div>
-                </div>
-            </main>
+            <Home />
         </>
     );
 };
