@@ -1,3 +1,5 @@
+import Laptop from '../assets/img/laptop.svg';
+
 const Intro = () => {
     return (
         <div className="container mt-5">
@@ -20,7 +22,7 @@ const Intro = () => {
                     </a>
                 </div>
                 <div className="col-12-xs col-5-md">
-                    <img src="/img/laptop.svg" alt="" />
+                    <img src={Laptop} alt="laptop icon" />
                 </div>
             </div>
         </div>
