@@ -5,6 +5,7 @@
 // base & layout
 @use 'base' as *;
 @use 'breakpoints' as *;
+@use "containerQueries" as *;
 @use 'grid' as *;
 
 // Colors
