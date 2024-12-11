@@ -11,7 +11,12 @@ const Work = () => {
                 <div className="row gap-2">
                     <div className="col-12-xs col-6-md col-3-lg">
                         <div className="cards p-0">
-                            <h3 className="card-title m-1">Mario Club</h3>
+                            <h3 className="card-title m-1">
+                                Mario Club
+                                <span className="badge-secondary ml-1">
+                                    new
+                                </span>
+                            </h3>
                             <img src={Mario} alt="" />
                             <p className="m-1">
                                 Lorem ipsum dolor sit amet, consectetur
