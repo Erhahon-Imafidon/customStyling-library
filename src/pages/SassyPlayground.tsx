@@ -57,12 +57,14 @@ const SassyPlayGround = () => {
                     </div>
                 </div>
                 {/*Container Query*/}
-                <div className="containQuery">
-                    <h1 className="containQuery">Container Query</h1>
-                    <p>
-                        This container changes its background color based on its
-                        width.
-                    </p>
+                <div className="container-type">
+                    <div className="containQuery">
+                        <h1>Container Query</h1>
+                        <p>
+                            This container changes its background color based on
+                            its width.
+                        </p>
+                    </div>
                 </div>
             </main>
         </>

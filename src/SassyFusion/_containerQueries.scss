@@ -15,6 +15,10 @@ $container-queries: (
         '7xl': 80rem, // 1280px
 );
 
+.container-type {
+  container-type: inline-size;
+}
+
 @mixin c-query($size) {
   $min-width: map.get($container-queries, $size);
   @container (min-width: $min-width) {
@@ -28,3 +32,5 @@ $container-queries: (
     color: #9900ff;
   }
 }
+
+//@debug map.get($container-queries, 'xl');
