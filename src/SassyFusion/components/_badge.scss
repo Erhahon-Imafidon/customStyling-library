@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '../variables' as *;
+
+@mixin badge($bg-color: map.get($colors, 'info'), $color: white, $padding: $base-padding, $border-radius: $base-border-radius) {
+    display: inline-block;
+    padding: math.div($padding, 4) math.div($padding, 2);
+    border-radius: $border-radius * 4;
+    background-color: $bg-color;
+    color: $color;
+    font-size: $font-size-sm;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.badge {
+    @include badge;
+}
+
+@each $key, $val in $colors {
+  .badge-#{$key} {
+    @include badge($val);
+  }
+
+  .badge-text-#{$key} {
+    color: $val;
+  }
+}
+
