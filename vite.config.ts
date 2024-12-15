@@ -10,4 +10,7 @@ export default defineConfig({
             content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
         }) as unknown as Plugin,
     ],
+    css: {
+        postcss: {},
+    },
 });
